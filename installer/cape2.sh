@@ -11,11 +11,11 @@
 # CAPE TcpDump will sniff this interface
 NETWORK_IFACE=virbr1
 # On which IP TOR should listen
-IFACE_IP="192.168.1.1"
+IFACE_IP="192.168.101.1"
 # Confiures default network interface ip route table
 INTERNET_IFACE=$(ip route | grep '^default'|awk '{print $5}')
 # DB password
-PASSWD="SuperPuperSecret"
+PASSWD="forhomecapdb"
 # Only in case if you using distributed CAPE And MongoDB sharding.
 DIST_MASTER_IP="192.168.1.1"
 USER="cape"

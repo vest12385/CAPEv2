@@ -1,4 +1,5 @@
 import os
+import sys
 
 from lib.cuckoo.common.constants import CUCKOO_ROOT
 
@@ -28,3 +29,6 @@ def cwd(*args, **kwargs):
         raise RuntimeError(f"Invalid arguments provided to cwd(): {args} {kwargs}")
     else:
         return os.path.join(_root, *args)
+
+def is_linux():
+    return (sys.platform == "linux2" or sys.platform == "linux")

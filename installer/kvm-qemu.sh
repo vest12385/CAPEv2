@@ -110,24 +110,24 @@ src_bios_table_date2="11\/03\/2018"
 src_fw_smbios_date="11\/03\/2018"
 
 # what to use as a replacement for QEMU in the tablet info
-PEN_REPLACER='<WOOT>'
+PEN_REPLACER='BXPC'
 
 # what to use as a replacement for QEMU in the scsi disk info
-SCSI_REPLACER='<WOOT>'
+SCSI_REPLACER='BXPC'
 
 # what to use as a replacement for QEMU in the atapi disk info
-ATAPI_REPLACER='<WOOT>'
+ATAPI_REPLACER='BXPC'
 
 # what to use as a replacement for QEMU in the microdrive info
-MICRODRIVE_REPLACER='<WOOT>'
+MICRODRIVE_REPLACER='BXPC'
 
 # what to use as a replacement for QEMU in bochs in drive info
-BOCHS_BLOCK_REPLACER='<WOOT>'
-BOCHS_BLOCK_REPLACER2='<WOOT>'
-BOCHS_BLOCK_REPLACER3='<WOOT>'
+BOCHS_BLOCK_REPLACER='BXPC'
+BOCHS_BLOCK_REPLACER2='BXPC'
+BOCHS_BLOCK_REPLACER3='BXPC'
 
 # what to use as a replacement for BXPC in bochs in ACPI info
-BXPC_REPLACER='<WOOT>'
+BXPC_REPLACER='BXPC'
 
 # ToDO add to see if cpu supports VTx
 # egrep '(vmx|svm)' --color=always /proc/cpuinfo
@@ -1307,7 +1307,7 @@ case "$COMMAND" in
 'issues')
     issues;;
 'all')
-    configure_needreboot
+    # configure_needreboot
     aptitude install -f language-pack-UTF-8 python3-pip -y
     install_qemu
     install_seabios
