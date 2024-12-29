@@ -30,5 +30,6 @@ def cwd(*args, **kwargs):
     else:
         return os.path.join(_root, *args)
 
+
 def is_linux():
-    return (sys.platform == "linux2" or sys.platform == "linux")
+    return sys.platform == "linux2" or sys.platform == "linux"
